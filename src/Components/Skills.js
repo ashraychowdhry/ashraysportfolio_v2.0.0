@@ -6,7 +6,7 @@ import { faDesktop, faFileCode } from '@fortawesome/free-solid-svg-icons'
 function Skills() {
     return (
         <>
-            <div className='services'>
+            <div className='skills main-font'>
                 <h1 className='py-5'>Skills</h1>
                 <div className='container'>
                     <div className='row'>

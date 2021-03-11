@@ -8,12 +8,12 @@ function AboutMe() {
             <div className='about-me-wrapper'>
 
                 <div className='container py-5'>
-                <h2 className='about-header'>About Me</h2>
+                <h2 className='about-header main-font'>About Me</h2>
                     <div className='row'>
                         <div className='photo-wrapper col-lg-6 col-xm-12'>
                             <img className='about-pic' src={gtechlogo} alt='temp' />
                         </div>
-                        <div className='about-text col-lg-6 col-xm-12'>
+                        <div className='about-text main-font col-lg-6 col-xm-12'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -23,7 +23,7 @@ function AboutMe() {
                     </div>
 
                     <div className='row'>
-                        <div className='about-text col-lg-6 col-xm-12'>
+                        <div className='about-text main-font col-lg-6 col-xm-12'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 

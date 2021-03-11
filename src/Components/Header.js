@@ -7,7 +7,7 @@ function Header() {
     return (
         <>
             <div className="header-wrapper">
-                <div className='main-info'>
+                <div className='main-info main-font'>
                     <img className='profilepic' src={profilepic} alt='Profile Picture'/>
                     <h1>Ashray Chowdhry</h1>
                     <TypedEffect 
