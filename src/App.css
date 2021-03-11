@@ -3,9 +3,12 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-dark: #2b2b2b;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-light-grey: #dbdbdb;
+  --primary-dark-red: #8b0000;
+  --secondary-red: #e28080;
 }
 
 .body {
@@ -49,11 +52,11 @@ nav ul li {
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 3px solid darkred;
+  border-top: 3px solid var(--primary-dark-red);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 3px solid darkred;
+  border-top: 3px solid var(--primary-dark-red);
 }
 
 .container {
@@ -78,6 +81,7 @@ nav ul li {
   margin-bottom: 20px;
   border-radius: 50%;
   border: 1px solid #ddd;
+  z-index: 1;
 }
 
 .main-info {
@@ -106,7 +110,7 @@ nav ul li {
 }
 
 .get-started-button {
-  border: 1px solid var(--primary-red);
+  border: 1px solid var(--primary-dark-red);
   text-transform: uppercase;
   border-radius: 0;
   padding: 10px 12px 12px 12px;
@@ -117,7 +121,7 @@ nav ul li {
 
 .get-started-button:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
+  background-color: var(--primary-dark-red);
   transition: 0.2s ease-in-out;
   color: var(--primary-white);
 }
@@ -166,6 +170,49 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/***********Services***********/
+
+.services {
+  font-family: "Roboto Condensed", sans-serif !important;
+  text-align: center;
+  padding-bottom: 20px;
+  background: var(--primary-light-grey);
+  height: 90vh;
+}
+
+.services h1 {
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+.services .circle {
+  position: relative;
+  margin: 10px auto;
+  background: var(--primary-dark-red);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.services .service-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-light-grey);
+}
+
+.services .box {
+  height: 200px;
+  border-bottom: 5px solid var(--primary-dark-red);
+  background: var(--primary-white);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.services .box:hover {
+  background: var(--secondary-red);
 }
 
 @media (max-width: 768px) {

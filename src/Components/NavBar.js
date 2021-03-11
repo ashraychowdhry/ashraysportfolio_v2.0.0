@@ -25,7 +25,7 @@ function NavBar() {
                         <a className="nav-link" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#services">Services</a>
+                        <a className="nav-link" href="#services">Skills</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#howwork">How Work</a>
