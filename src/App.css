@@ -9,7 +9,7 @@
 }
 
 .body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 /*******************NAVBAR******************/
@@ -71,6 +71,15 @@ nav ul li {
   height: 94vh;
 }
 
+.profilepic {
+  max-width: 25%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
 .main-info {
   display: flex;
   flex-direction: column;
@@ -119,6 +128,46 @@ nav ul li {
   z-index: 1;
 }
 
+/***********About Me***********/
+
+.about-me-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("Resources/about-me-background.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.about-pic {
+  max-width: 60%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: var(--primary-white);
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.about-header {
+  text-transform: uppercase;
+  color: var(--primary-white);
+  font-family: "Roboto Condensed", sans-serif !important;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .particles-bg-header {
     display: none;
@@ -126,5 +175,17 @@ nav ul li {
 
   .main-info h1 {
     font-size: 70px !important;
+  }
+
+  .about-pic {
+    max-width: 20%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 468px) {
+  .about-pic {
+    max-width: 20%;
+    align-items: center;
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import TypedEffect from 'react-typed'
+import profilepic from '../Resources/profile-pic.jpg'
 
 
 function Header() {
@@ -7,6 +8,7 @@ function Header() {
         <>
             <div className="header-wrapper">
                 <div className='main-info'>
+                    <img className='profilepic' src={profilepic} alt='Profile Picture'/>
                     <h1>Ashray Chowdhry</h1>
                     <TypedEffect 
                         className='typed-header'
