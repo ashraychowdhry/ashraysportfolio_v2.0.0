@@ -9,6 +9,7 @@
   --primary-light-grey: #dbdbdb;
   --primary-dark-red: #8b0000;
   --secondary-red: #e28080;
+  --primary-black: #000000;
 }
 
 .main-font {
@@ -205,6 +206,7 @@ nav ul li {
   background: var(--primary-white);
   margin-bottom: 20px;
   padding: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .skills .box:hover {
@@ -277,6 +279,25 @@ nav ul li {
   font-weight: 900;
 }
 
+/**************Portfolio***************/
+
+.port-wrapper {
+  background: var(--primary-light-grey) !important;
+  padding: 40px 0px;
+  height: 150vh;
+}
+
+.portfolio-image {
+  width: 300px;
+  border: 1px solid var(--primary-dark-red);
+  padding: 10px 10px;
+}
+
+.image-box-wrapper {
+  position: relative;
+  margin: 20px;
+}
+
 /**************Media***************/
 
 @media (max-width: 768px) {
@@ -300,6 +321,58 @@ nav ul li {
     margin-bottom: 10px;
     padding: 10px;
   }
+}
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-white);
+  width: 300px;
+  height: 220px;
+  top: 0px;
+  border: 1px solid var(--primary-dark-red);
+  cursor: pointer;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -165px;
+  margin-top: 100px;
+  color: var(--primary-dark);
+  font-size: 40px;
+}
+
+.image-box-wrapper:hover .overflow {
+  opacity: 0.4;
+  transition: 0.3s ease-in-out;
+}
+
+.image-box-wrapper:hover .portfolio-icon {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-popup-image {
+  width: 50%;
+  padding: 0px 8px;
+}
+.popup-wrapper {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hyperlink {
+  cursor: pointer;
+  color: var(--primary-dark-red);
+}
+
+.hyperlink:hover {
+  cursor: pointer;
+  color: var(--primary-red);
 }
 
 @media (max-width: 468px) {

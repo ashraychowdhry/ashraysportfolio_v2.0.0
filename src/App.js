@@ -7,6 +7,7 @@ import Particles from 'react-particles-js'
 import AboutMe from './Components/AboutMe'
 import Skills from './Components/Skills'
 import Experience from './Components/Experience';
+import Portfolio from './Components/Portfolio';
 
 function App() {
   return (
@@ -93,6 +94,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Experience />
+      <Portfolio />
     </>
   );
 }
