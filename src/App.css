@@ -10,7 +10,8 @@
   --primary-dark-red: #8b0000;
   --secondary-red: #e28080;
   --primary-black: #000000;
-  --primary-shadow: rgba(0,0,0,0.6)
+  --primary-shadow: rgba(0,0,0,0.6);
+  --primary-green: #1cbd04;
 }
 
 .main-font {
@@ -400,13 +401,13 @@ nav ul li {
   padding-bottom: 70px;
   margin-bottom: 0px;
   width: 100%;
-  height: 160vh;
+  height: 120vh;
   
 }
 
 .testimonial-header {
   color: var(--primary-light-grey);
-  padding: 40px 0px;
+  padding: 0px 0px;
   text-transform: uppercase;
 }
 
@@ -450,3 +451,119 @@ nav ul li {
   width: 600px !important;
   border-radius: 50%;
 }
+
+/****************CONTACT FORM*********************/
+
+.contacts {
+  background: var(--primary-dark);
+  height: 100vh;
+  padding: 30px 0px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contacts h1 {
+  text-transform: uppercase;
+  color: var(--primary-dark-red);
+  padding: 20px;
+}
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 20;
+}
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid var(--primary-dark-red);
+  border-radius: 0;
+  outline: none !important;
+  color: var(--primary-white);
+  box-shadow: none;
+  top: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+  /*padding-left: 0 !important;*/
+}
+
+.contacts .container {
+  padding: 40px;
+}
+
+
+
+.contacts input:hover, .contacts textarea:hover {
+  background: transparent;
+  color: var(--primary-dark-red);
+  outline: none !important;
+  border-style: none;
+  box-shadow: none;
+  border-bottom: 2px solid var(--primary-red);
+  transition: 0.2s ease-in-out;
+  
+  
+}
+
+
+.contacts input:focus, .contacts textarea:focus {
+  background: var(--primary-shadow);
+  color: var(--primary-dark-red);
+  outline: none !important;
+  border-style: none;
+  box-shadow: none;
+  border-bottom: 2px solid var(--primary-red);
+  transition: 0.5s ease-in-out;
+  
+  
+}
+
+
+.contacts textarea {
+  height: 300px !important;
+  margin: 10px;
+}
+
+.contacts input {
+  margin: 10px;
+}
+
+.contact-btn {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  width: 0;
+  height: 2px;
+  background: var(--primary-hover-red);
+  display: inline-block;
+}
+
+.error-msg {
+  color: var(--primary-red);
+  margin-left: 10px;
+
+}
+
+.success-msg {
+  color: var(--primary-green);
+  font-size: 40;
+  font-weight: 900;
+
+}
+
+/*Line slide animation offshifts line
+input:hover+.line, textarea:hover+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+
+}
+
+input.form-control {
+  margin: -13px 0px;
+}
+*/

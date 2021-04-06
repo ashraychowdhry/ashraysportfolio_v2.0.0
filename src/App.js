@@ -9,6 +9,7 @@ import Skills from './Components/Skills'
 import Experience from './Components/Experience';
 import Portfolio from './Components/Portfolio';
 import Testimonials from './Components/Testimonials';
+import ContactForm from './Components/ContactForm';
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Testimonials />
+      <ContactForm />
     </>
   );
 }
