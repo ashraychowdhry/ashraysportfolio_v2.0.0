@@ -6,7 +6,7 @@ import profilepic from '../Resources/profile-pic.jpg'
 function Header() {
     return (
         <>
-            <div className="header-wrapper">
+            <div id='home' className="header-wrapper">
                 <div className='main-info main-font'>
                     <img className='profilepic' src={profilepic} alt='Profile Picture'/>
                     <h1>Ashray Chowdhry</h1>

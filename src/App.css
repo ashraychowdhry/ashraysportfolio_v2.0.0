@@ -10,7 +10,7 @@
   --primary-dark-red: #8b0000;
   --secondary-red: #e28080;
   --primary-black: #000000;
-  --primary-shadow: rgba(0,0,0,0.6);
+  --primary-shadow: rgba(0, 0, 0, 0.6);
   --primary-green: #1cbd04;
 }
 
@@ -154,6 +154,8 @@ nav ul li {
 
 .about-text {
   color: var(--primary-white);
+  font-size: 20px;
+  font-stretch: expanded;
 }
 
 .about-header {
@@ -291,6 +293,7 @@ nav ul li {
 
 .portfolio-image {
   width: 300px;
+  height: 200px;
   border: 1px solid var(--primary-dark-red);
   padding: 10px 10px;
 }
@@ -330,7 +333,7 @@ nav ul li {
   opacity: 0;
   background: var(--primary-white);
   width: 300px;
-  height: 220px;
+  height: 200px;
   top: 0px;
   border: 1px solid var(--primary-dark-red);
   cursor: pointer;
@@ -391,10 +394,9 @@ nav ul li {
   }
 }
 
-
 /***************Testimonials****************/
 .testimonials-base {
-  background: var(--primary-dark);/*url("Resources/about-me-background.jpg");*/
+  background: var(--primary-dark); /*url("Resources/about-me-background.jpg");*/
   position: relative;
   background-size: cover;
   background-position: center;
@@ -402,7 +404,6 @@ nav ul li {
   margin-bottom: 0px;
   width: 100%;
   height: 120vh;
-  
 }
 
 .testimonial-header {
@@ -460,7 +461,6 @@ nav ul li {
   padding: 30px 0px;
   align-items: center;
   justify-content: center;
-
 }
 
 .contacts h1 {
@@ -473,7 +473,8 @@ nav ul li {
   font-size: 20;
 }
 
-.contacts input, .contacts textarea {
+.contacts input,
+.contacts textarea {
   width: 100%;
   box-sizing: border-box;
   background: none;
@@ -493,9 +494,8 @@ nav ul li {
   padding: 40px;
 }
 
-
-
-.contacts input:hover, .contacts textarea:hover {
+.contacts input:hover,
+.contacts textarea:hover {
   background: transparent;
   color: var(--primary-dark-red);
   outline: none !important;
@@ -503,12 +503,10 @@ nav ul li {
   box-shadow: none;
   border-bottom: 2px solid var(--primary-red);
   transition: 0.2s ease-in-out;
-  
-  
 }
 
-
-.contacts input:focus, .contacts textarea:focus {
+.contacts input:focus,
+.contacts textarea:focus {
   background: var(--primary-shadow);
   color: var(--primary-dark-red);
   outline: none !important;
@@ -516,10 +514,7 @@ nav ul li {
   box-shadow: none;
   border-bottom: 2px solid var(--primary-red);
   transition: 0.5s ease-in-out;
-  
-  
 }
-
 
 .contacts textarea {
   height: 300px !important;
@@ -546,14 +541,39 @@ nav ul li {
 .error-msg {
   color: var(--primary-red);
   margin-left: 10px;
-
 }
 
 .success-msg {
   color: var(--primary-green);
   font-size: 40;
   font-weight: 900;
+}
 
+/****FOOTER****/
+
+.footer-wrapper {
+  background-color: var(--primary-black);
+  color: var(--primary-dark);
+  padding: 30px;
+
+  height: 30vh;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+
+  color: var(--primary-light-grey);
+}
+
+.footer-wrapper a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-hover-red);
+}
+
+.footer-wrapper p {
+  margin-bottom: 0px;
+  color: var(--primary-light-grey);
 }
 
 /*Line slide animation offshifts line

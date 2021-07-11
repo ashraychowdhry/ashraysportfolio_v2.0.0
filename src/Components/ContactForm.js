@@ -35,7 +35,7 @@ export default function ContactForm() {
 
 
     return (
-        <div className='contacts main-font'>
+        <div id='contacts' className='contacts main-font'>
             <div className='text-center'>
 
                 <h1>Contact Me!</h1>

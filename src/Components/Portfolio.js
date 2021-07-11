@@ -1,5 +1,8 @@
 import React from 'react'
 import splitway from '../Resources/splitway_home.jpg'
+import ashraychowdhryweb from '../Resources/ashraychowdhrywebsite.jpg'
+import foodsplash from '../Resources/foodsplash_home.jpg'
+import ENATool from '../Resources/ENATool.jpg'
 import {openPopupBox, getConfig} from '../Helper/PortfolioPopUps.js'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,9 +38,58 @@ function Portfolio() {
     const openFoodSplashPopupBox = () => {
         const content = (
             <div className='popup-wrapper'>
-                <img src={splitway} className='portfolio-popup-image' alt='College Travel Service Tool'/>
+                <img src={foodsplash} className='portfolio-popup-image' alt='Food Donation Platform'/>
                 <p>This online website platform allows donors in a community to easily filter out and commit to donation events nearby that satisfy their donation requirements.</p>
                     <b>Github: </b> <a className='hyperlink' onClick={() =>window.open('https://github.com/ashraychowdhry/foodsplash')}>https://github.com/ashraychowdhry/foodsplash</a>
+            </div>
+
+        )
+        PopupboxManager.open({content})
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "FOODSPLASH",
+              },
+            },
+          });
+          
+        
+
+    }
+
+    const openACWPopupBox = () => {
+        const content = (
+            <div className='popup-wrapper'>
+                <img src={ashraychowdhryweb} className='portfolio-popup-image' alt='Personal Portfolio Website'/>
+                <p>This personal portfolio website! Made with ReactJS, Bootstrap, and JQuery (JavaScript, CSS, and HTML), 
+                    this leightweight website focuses on a readable and artistic way of presenting my professional experience.</p>
+                    <b>Github: </b> <a className='hyperlink' onClick={() =>window.open('https://github.com/ashraychowdhry/ashraysportfolio')}>https://github.com/ashraychowdhry/ashraysportfolio</a>
+            </div>
+
+        )
+        PopupboxManager.open({content})
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "FOODSPLASH",
+              },
+            },
+          });
+          
+        
+
+    }
+
+    const openENAPopupBox = () => {
+        const content = (
+            <div className='popup-wrapper'>
+                <img src={ENATool} className='portfolio-popup-image' alt='Ecological Network Analysis Systems Analyser'/>
+                <p>This website aims to make the findings of my recently co-authored publication accessible to the public. 
+                    The platoform streamlines calculations of several Ecological Network Analysis metrics in order to provide 
+                    recommendations to systems engineers for resilience improvement. Made with ReactJS, NodeJS, and ExpressJS.</p>
+                    <b>Github: </b> <a className='hyperlink' onClick={() =>window.open('https://github.com/ashraychowdhry/SystemsENAMetricAnalyzer')}>https://github.com/ashraychowdhry/SystemsENAMetricAnalyzer</a>
             </div>
 
         )
@@ -74,7 +126,7 @@ function Portfolio() {
     }
 
     return (
-        <div className='port-wrapper'>
+        <div id='portfolio' className='port-wrapper'>
             <div className='container'>
                 <h1 className='text-uppercase text-center py-5 main-font'>
                     Portfolio
@@ -89,19 +141,19 @@ function Portfolio() {
                         </div>  
 
                         <div className='image-box-wrapper' onClick={openFoodSplashPopupBox}>
-                            <img className='portfolio-image' src={splitway} alt='FoodSplash' />
+                            <img className='portfolio-image' src={foodsplash} alt='FoodSplash' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearch} />
                         </div>  
 
-                        <div className='image-box-wrapper' onClick={openSplitwayPopupBox}>
-                            <img className='portfolio-image' src={splitway} alt='Autonomous Electric Vehicle' />
+                        <div className='image-box-wrapper' onClick={openACWPopupBox}>
+                            <img className='portfolio-image' src={ashraychowdhryweb} alt='Autonomous Electric Vehicle' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearch} />
                         </div>  
 
-                        <div className='image-box-wrapper' onClick={openSplitwayPopupBox}>
-                            <img className='portfolio-image' src={splitway} alt='Autonomous Robotic Arm' />
+                        <div className='image-box-wrapper' onClick={openENAPopupBox}>
+                            <img className='portfolio-image' src={ENATool} alt='Autonomous Robotic Arm' />
                             <div className='overflow'></div>
                             <FontAwesomeIcon className='portfolio-icon' icon={faSearch} />
                         </div>  

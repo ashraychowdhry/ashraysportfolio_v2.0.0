@@ -10,6 +10,7 @@ import Experience from './Components/Experience';
 import Portfolio from './Components/Portfolio';
 import Testimonials from './Components/Testimonials';
 import ContactForm from './Components/ContactForm';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </>
   );
 }
