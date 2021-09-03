@@ -7,6 +7,7 @@
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
   --primary-light-grey: #dbdbdb;
+  --primary-dark-grey: #444444;
   --primary-dark-red: #8b0000;
   --secondary-red: #e28080;
   --primary-black: #000000;
@@ -21,6 +22,7 @@
 /*******************NAVBAR******************/
 nav {
   z-index: 2;
+  height: 50px;
 }
 .logo {
   width: 260px;
@@ -28,7 +30,7 @@ nav {
 
 nav a.navbar-brand {
   text-transform: uppercase;
-  color: var(--primary-white) !important;
+  color: var(--primary-light-grey) !important;
   /* 
   max-width: 50px;
   padding: 0 !important; 
@@ -49,21 +51,24 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 12px;
   margin-left: 12px;
-  color: var(--primary-white) !important;
-  border-top: 3px solid var(--primary-dark);
+  color: var(--primary-light-grey) !important;
 }
 
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
-  border-top: 3px solid var(--primary-dark-red);
+  color: var(--primary-dark-red) !important;
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 3px solid var(--primary-dark-red);
+  color: var(--primary-dark-red) !important;
 }
 
 .container {
   height: 6vh;
+}
+
+.navbar-inner {
+  background: transparent;
 }
 
 /**********HEADER**********/
@@ -74,7 +79,7 @@ nav ul li {
     url("Resources/header-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 94vh;
+  height: 110vh;
 }
 
 .profilepic {
@@ -101,13 +106,13 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   text-transform: uppercase;
   font-size: 70px;
 }
 
 .typed-header {
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   font-size: 40px;
 }
 
@@ -116,16 +121,17 @@ nav ul li {
   text-transform: uppercase;
   border-radius: 0;
   padding: 10px 12px 12px 12px;
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   margin: 30px;
   z-index: 2;
+  width: 60vw;
 }
 
 .get-started-button:hover {
   text-decoration: none;
   background-color: var(--primary-dark-red);
   transition: 0.2s ease-in-out;
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
 }
 .tsparticles-canvas-el {
   position: absolute;
@@ -142,7 +148,7 @@ nav ul li {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
 }
 
 .about-pic {
@@ -153,14 +159,14 @@ nav ul li {
 }
 
 .about-text {
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   font-size: 20px;
   font-stretch: expanded;
 }
 
 .about-header {
   text-transform: uppercase;
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -174,17 +180,21 @@ nav ul li {
   align-items: center;
 }
 
+.spacer {
+  padding-top: 40px;
+}
+
 /***********Services***********/
 
 .skills {
   text-align: center;
   padding-bottom: 20px;
-  background: var(--primary-light-grey);
-  height: 90vh;
+  background: var(--primary-dark);
+  height: 100vh;
 }
 
 .skills h1 {
-  color: var(--primary-dark);
+  color: var(--primary-light-grey);
   text-transform: uppercase;
 }
 
@@ -207,7 +217,7 @@ nav ul li {
 .skills .box {
   height: 200px;
   border-bottom: 5px solid var(--primary-dark-red);
-  background: var(--primary-white);
+  background: var(--primary-light-grey);
   margin-bottom: 20px;
   padding: 10px;
   transition: 0.3s ease-in-out;
@@ -221,7 +231,7 @@ nav ul li {
 
 .experience-wrapper {
   padding-top: 45px;
-  background-color: var(--primary-light-grey);
+  background-color: var(--primary-dark-grey);
   padding-bottom: 45px;
 }
 .experience-body {
@@ -233,6 +243,7 @@ nav ul li {
 .exp-header {
   text-transform: uppercase;
   margin-top: 45px;
+  color: var(--primary-light-grey);
 }
 
 .experience-body::before {
@@ -242,7 +253,7 @@ nav ul li {
   left: 50%;
   width: 4px;
   height: 100%;
-  background: var(--primary-dark);
+  background: var(--primary-light-grey);
   z-index: 1;
 }
 
@@ -267,7 +278,7 @@ nav ul li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 5px solid var(--primary-dark);
+  border: 5px solid var(--primary-light-grey);
   background: var(--primary-dark-red);
   margin-top: 20px;
   z-index: 3;
@@ -276,19 +287,17 @@ nav ul li {
 .timeline-content {
   width: 95%;
   padding: 0 16px;
-  color: var(--primary-dark);
+  color: var(--primary-light-grey);
   direction: ltr;
-
-  color: var(--primary-dark-red);
   font-weight: 900;
 }
 
 /**************Portfolio***************/
 
 .port-wrapper {
-  background: var(--primary-light-grey) !important;
+  background: var(--primary-dark) !important;
   padding: 40px 0px;
-  height: 100vh;
+  height: 110vh;
 }
 
 .portfolio-image {
@@ -301,6 +310,10 @@ nav ul li {
 .image-box-wrapper {
   position: relative;
   margin: 20px;
+}
+
+.portfolio-header {
+  color: var(--primary-light-grey);
 }
 
 /**************Media***************/
@@ -322,7 +335,7 @@ nav ul li {
   .skills .box {
     height: 100px;
     border-bottom: 5px solid var(--primary-dark-red);
-    background: var(--primary-white);
+    background: var(--primary-light-grey);
     margin-bottom: 10px;
     padding: 10px;
   }
@@ -331,7 +344,7 @@ nav ul li {
 .overflow {
   position: absolute;
   opacity: 0;
-  background: var(--primary-white);
+  background: var(--primary-light-grey);
   width: 300px;
   height: 200px;
   top: 0px;
@@ -343,7 +356,7 @@ nav ul li {
   position: absolute;
   opacity: 0;
   margin-left: -165px;
-  margin-top: 100px;
+  margin-top: 80px;
   color: var(--primary-dark);
   font-size: 40px;
 }
@@ -361,7 +374,8 @@ nav ul li {
 
 .portfolio-popup-image {
   width: 50%;
-  padding: 0px 8px;
+  margin: 20px 10px;
+  border: 1px solid var(--primary-dark-red);
 }
 .popup-wrapper {
   align-content: center;
@@ -388,15 +402,42 @@ nav ul li {
   .skills .box {
     height: 50;
     border-bottom: 5px solid var(--primary-dark-red);
-    background: var(--primary-white);
+    background: var(--primary-light-grey);
     margin-bottom: 10px;
     padding: 10px;
   }
 }
+/***************Courses*****************/
+
+.courses-wrapper {
+  background: var(--primary-dark-grey);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 140vh;
+}
+
+.courses-header {
+  color: var(--primary-light-grey);
+  padding: 0px 0px;
+  text-transform: uppercase;
+}
+
+.courses-semester-header {
+  color: var(--primary-light-grey);
+  text-transform: uppercase;
+}
+
+.course-card {
+  color: var(--primary-dark);
+}
 
 /***************Testimonials****************/
 .testimonials-base {
-  background: var(--primary-dark); /*url("Resources/about-me-background.jpg");*/
+  background: var(--primary-dark-grey);
   position: relative;
   background-size: cover;
   background-position: center;
@@ -482,7 +523,7 @@ nav ul li {
   border-bottom: 2px solid var(--primary-dark-red);
   border-radius: 0;
   outline: none !important;
-  color: var(--primary-white);
+  color: var(--primary-light-grey);
   box-shadow: none;
   top: 0;
   padding: 20px;

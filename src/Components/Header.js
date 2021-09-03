@@ -1,6 +1,8 @@
 import React from 'react'
 import TypedEffect from 'react-typed'
 import profilepic from '../Resources/profile-pic.jpg'
+import { Link } from "react-scroll";
+
 
 
 function Header() {
@@ -8,6 +10,7 @@ function Header() {
         <>
             <div id='home' className="header-wrapper">
                 <div className='main-info main-font'>
+                    
                     <img className='profilepic' src={profilepic} alt='Profile Picture'/>
                     <h1>Ashray Chowdhry</h1>
                     <TypedEffect 
@@ -18,7 +21,7 @@ function Header() {
                         loop
                     />
 
-                    <a href='#' className='get-started-button'>About Me</a>
+                    <Link smooth={true} to='about' offset={0} className="get-started-button" href="/about">About Me</Link>
                 </div>
             </div>
         </>

@@ -4,8 +4,8 @@ function Experience() {
     return (
         <>
             <div id='experience' className='experience-wrapper main-font'>
-                <div className='d-flex justify-content-center my5 exp-header'>
-                    <h1>Experience</h1>
+                <div className='d-flex justify-content-center my5'>
+                    <h1 className='exp-header'>Experience</h1>
                 </div>
                 <div className='container experience-body'>
 
@@ -15,8 +15,10 @@ function Experience() {
 
                     </div>
                     <div className='timeline-content'>
-                        <h3>Summer 2021 - Capital One</h3>
-                        <p>This summer, I'll be a software engineering intern at Capital One Financial.</p>
+                        <h3>06/2021 - 08/2021 - Capital One Financial</h3>
+                        <p>Spearheaded the Savings Success web platform to provide convenient digitized retirement planning.
+                            Created customer-ready viable product with React.js, Python Flask, PostgreSQL, and AWS.
+                        </p>
                     </div>
                     
                 </div>
@@ -44,7 +46,7 @@ function Experience() {
                         <h3>12/2019 – Present - Sustainable Design and Manufacturing Laboratory</h3>
                         <p>Designed a modelling software to streamline simulation of large-scale ecosystems with MATLAB. 
                             Implement web application for user-friendly third-party ecological network analysis with React JS. 
-                            Co-authored IEEE journal paper of a novel systems metric accepted for publication in 2021.
+                            Co-authored a published IEEE Systems journal paper of a novel systems metric.
 </p>
                     </div>
                     

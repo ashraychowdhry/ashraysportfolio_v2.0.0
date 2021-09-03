@@ -8,44 +8,33 @@ function AboutMe() {
             <div id='about' className='about-me-wrapper'>
 
                 <div className='container py-5'>
-                <h2 className='about-header main-font'>About Me</h2>
-                    <div className='row'>
-                        <div className='photo-wrapper col-lg-6 col-xm-12'>
-                            <img className='about-pic' src={gtechlogo} alt='temp' />
-                        </div>
-                        <div className='about-text main-font col-lg-6 col-xm-12'>
+                    <h2 className='about-header main-font'>Background</h2>
+                    <div className='row about-text main-font'>
 
-                            As a dedicated Computer Science major at Georgia Tech with a concentration in Artificial Intelligence and Database/Network Design, 
-                            I have worked on a variety of projects, gaining experience in areas such as responsive web development, predictive modeling with 
-                            data handling, and machine automation.
-
-                            I am currently a senior at the Georgia Institute of Technology, studying Computer Science (B.S.) 
-                            with concentrations in Artificial Intelligence, Networking, and Database Design, along with a certification in Finance.
-
-                            
-
-                        </div>
+                        I am a senior at the Georgia Institute of Technology pursuing a B. S. in Computer Science from the College of Computing, 
+                        and a certification in Finance from Scheller Business School. I am concentrating in Artificial Intelligence and Database/
+                        Network Design, with an expected graduation date of May 2022. I have worked on a variety of projects, gaining experience in areas such as responsive web development, 
+                        predictive modeling with data handling, and machine automation.
                     </div>
-
-                    <div className='row'>
-                        <div className='about-text main-font col-lg-6 col-xm-12'>
-
-                            As a junior, I co-authored an original publication to the IEEE Systems Journal paper for the development of a novel systems
-                            engineering resilience metric and corresponding simulation software. 
-                            
-                            In the summer of my sophomore year, I interned at John Deere Financial as a Data Analyst in the Customer Channel and Analytics team, 
-                            developing their customer churn predictive model and streamlining it for production.
-
-                            As a Senior Portfolio Analyst at the Georgia Tech Investments Committee, I've helped lead several teams to conduct equity
-                            analysis on university holdings to manage its $1.7 million portfolio.
-
-                            This coming summer, I will be interning at Capital One as a Software Engineer.
-                            
-                        </div>
-                        <div className='photo-wrapper col-lg-6 col-xm-12'>
-                            <img className='about-pic' src={gtechsign} alt='temp' />
-                        </div>
+                    <div className='spacer'></div>
+                    <div className='row about-text main-font'>
+                        During my time as a student, I have been very active in pursuing research. As a junior, I co-authored an original publication to the IEEE Systems Journal paper for the development of a novel systems
+                        engineering resilience metric and corresponding simulation software as a part of the Sustainable Design Laboratory. Because of the paper's positive reception,
+                        I am currently designing a follow-up web tool that allows systems engineers to make use of the tool.
                     </div>
+                    <div className='spacer'></div>
+                    <div className='row about-text main-font'>
+                        In addition to research, I have experience working in several professional environments, which have allowed me to develop a variety
+                        of skills. My past experiences with full-stack development and application design, as well as with data analytics and predictive modeling
+                        allow me to adapt flexibly to situations and innovative tasks. During my time at Capital One, I worked full-stack to develop a 
+                        novel platform that digitized major financial planning services, building a professional-scale service. And with my past work on a team 
+                        at John Deere Financial, I was able to design a predictive model that improved prediction accuracy by over 
+                        15% and provided insight into customer churn and buying trends. Along with the model development and training, I worked with source control 
+                        and documentation tools to assist with future member onboarding, and helped transition the project into production. And through my past 
+                        research at Rutgers University for manufacturing automation and cybersecurity, I worked extensively in group settings to compile 
+                        literature and analyze security threats to production systems.
+                    </div>
+                    
                 </div>
             </div>
         </>
