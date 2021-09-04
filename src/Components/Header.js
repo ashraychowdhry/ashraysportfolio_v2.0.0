@@ -6,6 +6,8 @@ import { Link } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile } from '@fortawesome/free-solid-svg-icons'
 
+import { Document } from 'react-pdf'
+
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -25,34 +27,32 @@ function Header() {
                         backSpeed={60}
                         loop
                     />
-                    {/* 
+                     
                         <div className='row'>
-                            <ul className="navbar-nav mx-auto">
-                                <li className='col-lg-4'>
-                                    <Link smooth={true} to='home' offset={0} className="nav-link" href="#">
-                                        <FontAwesomeIcon icon={faFile}/> <span className="sr-only">(current)</span>
-                                        <p>Resume</p>
-                                    </Link>
-                                </li>
-                                    
-                                <li className='col-lg-4'>
-                                    <Link smooth={true} to='home' offset={0} className="nav-link" href="#">
-                                        <FontAwesomeIcon icon={faGithubSquare}/> <span className="sr-only">(current)</span>
-                                        <p>Github</p>
-                                    </Link>
-                                </li>
-                                <li className='col-lg-4'>
-                                    <Link smooth={true} to='home' offset={0} className="nav-link" href="#">
-                                        <FontAwesomeIcon icon={faLinkedin}/> <span className="sr-only">(current)</span>
-                                        <p>LinkedIn</p>
-                                    </Link>
-                                </li>
 
-                                
+                                <div className='header-icon row'>
+                                    <a className="icon-item row justify-content-center" href='./Ashray_Chowdhry_Resume.pdf' download>
+                                        <FontAwesomeIcon icon={faFile}/> <span className="sr-only icon-styler">(current)</span>
+                                        <p className='text-styler'>Resume</p>
+                                    </a>
 
-                            </ul>
+                                </div>
+                                <div className='horizontal-spacer'></div>
+                                <div className='header-icon row'>
+                                    <a className="icon-item row justify-content-center" href='https://github.com/ashraychowdhry' >
+                                        <FontAwesomeIcon icon={faGithubSquare}/> <span className="sr-only icon-styler">(current)</span>
+                                        <p className='text-styler'>Github</p>
+                                    </a>
+                                </div>
+                                <div className='horizontal-spacer'></div>
+                                <div className='header-icon row'>
+                                <a className="icon-item row justify-content-center" href='https://linkedin.com/in/ashraychowdhry' >
+                                        <FontAwesomeIcon icon={faLinkedin}/> <span className="sr-only icon-styler">(current)</span>
+                                        <p className='text-styler'>LinkedIn</p>
+                                    </a>
+                                </div>
                         </div>
-                    */}
+                    
                     
 
                     <Link smooth={true} to='about' offset={0} className="get-started-button" href="/about">About Me</Link>
