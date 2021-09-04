@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faHome } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-scroll";
 
+
 function NavBar() {
     const [colorChange, setColorChange] = useState(false);
 
@@ -14,14 +15,14 @@ function NavBar() {
             setColorChange(false);
         }
     };
-    
+
     window.addEventListener('scroll', changeNavbarColor);
     return (
         <div>
             
 
             <nav className={colorChange ? 'navbar navbar-expand-lg navbar-light bg-dark fixed-top' : 'navbar navbar-expand-lg navbar-light fixed-top'} >
-            .<div className="container">
+            <div className="container">
 
 
             
@@ -49,7 +50,13 @@ function NavBar() {
                         <Link smooth={true} to='portfolio' className="nav-link" href="#portfolio">Portfolio</Link>
                     </li>
                     <li className="nav-item">
-                        <Link smooth={true} to='contacts' className="nav-link" href="#contacts">Contacts</Link>
+                        <Link smooth={true} to='courses' className="nav-link" href="#courses">Courses</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link smooth={true} to='extracurriculars' className="nav-link" href="#extracurriculars">Extracurriculars</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link smooth={true} to='contacts' className="nav-link" href="#contacts">Contact Me</Link>
                     </li>
                 </ul>
                 

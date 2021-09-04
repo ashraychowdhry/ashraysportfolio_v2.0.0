@@ -140,6 +140,15 @@ nav ul li {
   z-index: 1;
 }
 
+.header-icons {
+  color: var(--primary-light-grey);
+  z-index: 2;
+}
+
+.icons-container {
+  height: 10vh;
+}
+
 /***********About Me***********/
 
 .about-me-wrapper {
@@ -417,7 +426,7 @@ nav ul li {
   padding-bottom: 70px;
   margin-bottom: 0px;
   width: 100%;
-  height: 140vh;
+  height: auto;
 }
 
 .courses-header {
@@ -462,7 +471,7 @@ nav ul li {
 }
 
 .carousel-img {
-  width: 50%;
+  width: 10%;
 }
 
 .carousel-text {
@@ -472,10 +481,10 @@ nav ul li {
   margin-left: auto;
   margin-left: auto;
   padding-top: 0%;
-  padding-bottom: 30%;
+  padding-bottom: 40%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 100px;
+  height: 150px;
 }
 
 .carousel-text h3 {
@@ -485,8 +494,12 @@ nav ul li {
 }
 
 .carousel .slide {
-  height: 100% !important;
+  height: 160% !important;
   background: transparent !important;
+}
+
+.carousel .slide p {
+  margin-bottom: 80px;
 }
 
 .carousel .slide img {
@@ -615,6 +628,10 @@ nav ul li {
 .footer-wrapper p {
   margin-bottom: 0px;
   color: var(--primary-light-grey);
+}
+
+.footer-link {
+  padding-top: 10px;
 }
 
 /*Line slide animation offshifts line
