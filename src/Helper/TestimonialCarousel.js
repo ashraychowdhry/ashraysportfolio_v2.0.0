@@ -3,7 +3,7 @@ import {Carousel} from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import gtechlogo from '../Resources/georgia-tech-logo.png'
 import gtechsign from '../Resources/georgia-tech-sign.jpg'
-import sdmpic from '../Resources/sdm_lab.jpeg'
+import sdmpic from '../Resources/sdm_lab.png'
 import gtsfpic from '../Resources/gtsf_investments.png'
 
 
