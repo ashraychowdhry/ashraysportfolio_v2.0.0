@@ -1,6 +1,13 @@
 import { Link } from "react-scroll";
 import React from 'react'
 import { FacebookShareButton, FacebookIcon, TwitterIcon, TwitterShareButton, LinkedinShareButton, LinkedinIcon } from "react-share";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFile } from '@fortawesome/free-solid-svg-icons'
+
+import { Document } from 'react-pdf'
+
+import { faFacebook, faGithubSquare, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 export default function Footer() {
     return (
@@ -21,50 +28,76 @@ export default function Footer() {
                     </div>
                     <div className='col'>
                         <div className='row'>
-                            <div className='col'>
-                                <Link smooth={true} to='home' className="nav-link footer-nav footer-link" href="#home">Home</Link>
-                                
-                                <Link smooth={true} to='about' className="nav-link footer-nav footer-link" href="#about">About</Link>
-                                
-                                <Link smooth={true} to='skills' className="nav-link footer-link" href="#skills">Skills</Link>
-                                
-                                <Link smooth={true} to='experience' className="nav-link footer-link" href="#experience">Experience</Link>
-                                
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='./Ashray_Chowdhry_Resume.pdf' download>
+                                    <FontAwesomeIcon icon={faFile}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>Resume</p>
+                                </a>
+
                             </div>
+                            <div className='horizontal-spacer'></div>
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='https://github.com/ashraychowdhry' >
+                                    <FontAwesomeIcon icon={faGithubSquare}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>Github</p>
+                                </a>
+                            </div>
+                            <div className='horizontal-spacer'></div>
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='https://linkedin.com/in/ashraychowdhry' >
+                                    <FontAwesomeIcon icon={faLinkedin}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>LinkedIn</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className='row'>
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='https://www.facebook.com/ashray.chowdhry/'>
+                                    <FontAwesomeIcon icon={faFacebook}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>Facebook</p>
+                                </a>
+
+                            </div>
+                            <div className='horizontal-spacer'></div>
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='https://twitter.com/AshrayChowdhry' >
+                                    <FontAwesomeIcon icon={faTwitter}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>Twitter</p>
+                                </a>
+                            </div>
+                            <div className='horizontal-spacer'></div>
+                            <div className='header-icon row'>
+                                <a className="icon-item-footer row justify-content-center" href='https://www.instagram.com/ashraychowdhry/' >
+                                    <FontAwesomeIcon icon={faInstagram}/> <span className="sr-only icon-styler">(current)</span>
+                                    <p className='text-styler'>Instagram</p>
+                                </a>
+                            </div>
+
                             
 
-                            <div className='col'>
+                        </div>
+                    </div>
+
+                    <div className='col'>
+                        <div className='col align-items-center'>
+                            <div className='d-flex justify-content-center'>
+                                <FacebookShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
+                                    <FacebookIcon className='mx-3' size={30}/>
+                                </FacebookShareButton>
+                                <TwitterShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
+                                    <TwitterIcon className='mx-3' size={30}/>
+                                </TwitterShareButton>
+                                <LinkedinShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
+                                    <LinkedinIcon className='mx-3' size={30}/>
+                                </LinkedinShareButton>
+                                
+                            </div>
+                            <p className='pt-3 text-center'>
+                                    Copyright&copy;
+                                {   new Date().getFullYear()} &nbsp;Ashray Chowdhry | All Rights Reserved
+                                </p>
                             
-                                <Link smooth={true} to='portfolio' className="nav-link footer-link" href="#portfolio">Portfolio</Link>
-                                
-                                <Link smooth={true} to='courses' className="nav-link footer-link" href="#courses">Courses</Link>
-                                
-                                <Link smooth={true} to='extracurriculars' className="nav-link footer-link" href="#extracurriculars">Extracurriculars</Link>
-                                
-                                <Link smooth={true} to='contacts' className="nav-link footer-link" href="#contacts">Contact Me</Link>
-                                
-                            </div>
-
-                            <div className='col align-items-center'>
-                                <div className='d-flex justify-content-center'>
-                                    <FacebookShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
-                                        <FacebookIcon className='mx-3' size={30}/>
-                                    </FacebookShareButton>
-                                    <TwitterShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
-                                        <TwitterIcon className='mx-3' size={30}/>
-                                    </TwitterShareButton>
-                                    <LinkedinShareButton url={"ashraychowdhry.com"} quote={"Check out this developer!"} hashtag="#tech"> 
-                                        <LinkedinIcon className='mx-3' size={30}/>
-                                    </LinkedinShareButton>
-                                    
-                                </div>
-                                <p className='pt-3 text-center'>
-                                        Copyright&copy;
-                                    {   new Date().getFullYear()} &nbsp;Ashray Chowdhry | All Rights Reserved
-                                    </p>
-                                
-                            </div>
-
                         </div>
                     </div>
                 </div>
