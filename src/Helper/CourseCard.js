@@ -33,9 +33,9 @@ export default function CourseCard(props) {
           backgroundColor: '#dbdbdb',
           borderBottom: '4px solid #8b0000',
           marginBottom: 0,
-          minHeight: 30,
+          minHeight: 70,
           '&$expanded': {
-            minHeight: 56,
+            minHeight: 75,
             borderRadius: '0%',
           },
           height: '45px',

@@ -376,11 +376,45 @@ nav ul li {
   }
 
   .skills .box {
-    height: 100px;
+    height: 200px;
     border-bottom: 5px solid var(--primary-dark-red);
     background: var(--primary-light-grey);
     margin-bottom: 10px;
     padding: 10px;
+  }
+
+  .about-me-wrapper {
+    height: 200vh;
+    padding: 20px;
+  }
+
+  .skills {
+    height: 250vh;
+  }
+
+  .experience-wrapper {
+  }
+  .port-wrapper {
+    height: 200vh;
+  }
+
+  .testimonials-base {
+    height: 400vh;
+  }
+
+  .carousel-text {
+    height: 100px;
+  }
+
+  .carousel .slide {
+    height: 700px;
+  }
+  .testimonial-content-wrapper {
+    height: 700px;
+  }
+
+  .carousel-img {
+    width: 5%;
   }
 }
 
@@ -442,12 +476,22 @@ nav ul li {
     max-width: 20%;
     align-items: center;
   }
+  .about-pic {
+    max-height: 20%;
+    align-items: center;
+  }
   .skills .box {
     height: 50;
     border-bottom: 5px solid var(--primary-dark-red);
     background: var(--primary-light-grey);
     margin-bottom: 10px;
     padding: 10px;
+  }
+  .about-me-wrapper {
+    height: 400vh;
+  }
+  .skills {
+    height: 200vh;
   }
 }
 /***************Courses*****************/
